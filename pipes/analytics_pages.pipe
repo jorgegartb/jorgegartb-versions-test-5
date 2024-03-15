@@ -13,6 +13,4 @@ SQL >
         countState() AS hits
     FROM analytics_hits
     GROUP BY date, device, browser, location, pathname
-
-TYPE MATERIALIZED
-DATASOURCE analytics_pages_mv
+    LIMIT 10
