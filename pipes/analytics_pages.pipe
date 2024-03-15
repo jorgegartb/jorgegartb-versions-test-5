@@ -13,4 +13,4 @@ SQL >
         countState() AS hits
     FROM analytics_hits
     GROUP BY date, device, browser, location, pathname
-    LIMIT 10
+    LIMIT 100
